@@ -1,7 +1,9 @@
+require('./db/connect')
 const express = require('express');
 const app = express();
 const port = 5000
 const tasks = require('./routes/tasks')
+
 
 //middlewarres
 app.use(express.json())
